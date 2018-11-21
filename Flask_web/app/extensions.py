@@ -11,7 +11,7 @@ bootstrap = Bootstrap()
 db = SQLAlchemy()
 mail = Mail()
 moment = Moment()
-migrate = Migrate()
+migrate = Migrate(db=db)
 
 
 def config_extensions(app):

@@ -1,9 +1,10 @@
 from .main import main
-from .user import user
+from .users import users
 
 # 蓝本配置
 DEFAULT_BLUEPRINT = (
     (main, ''),
+    (users,'/users')
 )
 
 # 封装函数，完成蓝本注册
